@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네트워크 그래프</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        .node {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var graph = {'nodes': [{'id': '행정자치부 국가기록원', 'group': 1}, {'id': '기록관리혁신단', 'group': 2, 'date': '2005.05.09 ~ 2006.12.11'}, {'id': '기록정책부', 'group': 2, 'date': '2006.12.12 ~ 2008.02.28'}], 'links': [{'source': '행정자치부 국가기록원', 'target': '기록관리혁신단', 'relation': '하위기관'}, {'source': '행정자치부 국가기록원', 'target': '기록정책부', 'relation': '하위기관'}, {'source': '기록관리혁신단', 'target': '기록정책부', 'relation': '이전기관'}, {'source': '기록정책부', 'target': '기록관리혁신단', 'relation': '이후기관'}]};
+
+        var width = 800, height = 600;
+
+        var color = d3.scaleOrdinal(["#1f77b4", "#ff7f0e"]);
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(200))
+            .force("charge", d3.forceManyBody().strength(-500))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        var link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("class", "link");
+
+        var linkLabels = svg.append("g")
+            .attr("class", "link label")
+            .selectAll("text")
+            .data(graph.links)
+            .enter().append("text")
+            .attr("font-size", 10)
+            .attr("fill", "#000")
+            .text(function(d) { return d.relation; });
+
+        var node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("g")
+            .data(graph.nodes)
+            .enter().append("g");
+
+        var circles = node.append("circle")
+            .attr("r", 20)
+            .attr("fill", function(d) { return color(d.group); })
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+        var labels = node.append("text")
+            .text(function(d) { return d.id; })
+            .attr('x', 6)
+            .attr('y', 3);
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", function(d) { return d.source.x; })
+                .attr("y1", function(d) { return d.source.y; })
+                .attr("x2", function(d) { return d.target.x; })
+                .attr("y2", function(d) { return d.target.y; });
+
+            linkLabels
+                .attr("x", function(d) { return (d.source.x + d.target.x) / 2; })
+                .attr("y", function(d) { return (d.source.y + d.target.y) / 2; });
+
+            node
+                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+        }
+
+        function dragstarted(d) {
+            if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+            if (!d3.event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+    </script>
+</body>
+</html>

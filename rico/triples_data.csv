@@ -1,0 +1,110 @@
+Subject,Predicate,Object
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#descriptiveNote,"
+         
+         
+         <html:div xmlns:html=""http://www.w3.org/1999/xhtml"" xml:lang=""ko"">
+            
+            
+            <h4>기관 변천과 내부조직</h4>
+               
+            <html:p>◎ 총무처정부기록보존소 - 행정자치부정부기록보존소 - 행정자치부국가기록원 - 행정안전부국가기록원 - 안전행정부국가기록원 - 행정자치부국가기록원</html:p>
+               
+            <html:ul>
+               
+               <html:li>행정자치부 국가기록원 기록관리부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기록관리혁신단 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정보서비스부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정보화팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정책부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기획지원과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 나라기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 대통령기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 대통령기록관리팀 ( 2006.12 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 보존관리과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 보존관리팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 부산기록정보센터 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 부산지원 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 부산지원 ( 2006.12 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 서비스혁신팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 서울기록정보센터 ( 2005.05 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 서울사무소 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 서울지원 ( 2007.01 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 수집관리과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 수집관리팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 역사기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 평가분류과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 평가분류팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 혁신지원팀 ( 2005.05 ~ 2006.12 )</html:li>
+            </html:ul>
+
+         </html:div>
+      "
+https://authority.archives.go.kr/agentName/OG0003138-korean,https://www.ica.org/standards/RiC/ontology#textualValue,행정자치부 국가기록원
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType,https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord
+N4cecc5da2dd14d94941a333adcd89a40,https://www.ica.org/standards/RiC/ontology#date,2009-03-05
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#creationDate,2009-03-05
+N0109853c3cd04956ac325cf20db2a372,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#Activity
+https://authority.archives.go.kr/agentName/OG0003138-korean,https://www.ica.org/standards/RiC/ontology#isOrWasAgentNameOf,https://authority.archives.go.kr/agent/OG0003138
+https://authority.archives.go.kr/instantiation/OG0003138,https://www.ica.org/standards/RiC/ontology#isInstantiationOf,https://authority.archives.go.kr/record/OG0003138
+https://authority.archives.go.kr/agentName/OG0003138-korean,https://www.ica.org/standards/RiC/ontology#type,기관 대표명
+https://authority.archives.go.kr/instantiation/OG0003138,https://www.ica.org/standards/RiC/ontology#identifier,1310377
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#hasOrHadLanguage,https://authority.archives.go.kr/language/korean
+N4cecc5da2dd14d94941a333adcd89a40,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#Activity
+https://authority.archives.go.kr/instantiation/OG0003138,http://purl.org/dc/elements/1.1/format,text/xml
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#isOrWasAffectedBy,N0109853c3cd04956ac325cf20db2a372
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy,https://authority.archives.go.kr/rule/ric-o
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#describesOrDescribed,https://authority.archives.go.kr/agent/OG0003138
+https://authority.archives.go.kr/agentName/OG0003138-chineseCharacter,http://www.w3.org/2000/01/rdf-schema#label,行政自治部 國家記錄院
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#source,"행정안전부와 그 소속기관 직제 [시행 2009.3.1.] [대통령령 제21339호, 2009.2.27., 일부개정]"
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#history,"
+         
+         
+         
+         <html:div xmlns:html=""http://www.w3.org/1999/xhtml"" xml:lang=""ko"">
+            
+            <html:p>
+               <html:u>기관 연혁</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>행정자치부 국가기록원은 1962년 5월 내각사무처 총무과 문서촬영실로 시작하여 1969년 8월 23일 [정부기록보존소직제]에 의해 총무처 정부기록보존소가 되었다. 1998년 2월 28일 행정자치부 정부기록보존소를 거쳐 2004년 5월 24일[행정자치부와 그 소속기관 직제]에 따라 국가기록원으로 기관명칭을 변경하였다. 2008년 2월 29일 [행정안전부와 그 소속기관 직제]에 의거 국가기록원은 행정안전부 소속으로 변경되었다. 국가기록원은 기록물 관리에 관한 기본정책결정 및 제도의 개선, 대통령기록물과 공공기관의 보존대상 기록물 및 민간보유 중요기록물의 수집·보존 및 열람·활용, 그밖에 기록물 관리에 관한 사무를 관장한다.</html:p>
+
+         </html:div>
+      "
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#hasInstantiation,https://authority.archives.go.kr/instantiation/OG0003138
+https://authority.archives.go.kr/agent/OG0003138,http://isni.org/ontology#identifierValid,000000046404888X
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#hasCreator,https://authority.archives.go.kr/agent/k00001
+https://authority.archives.go.kr/agent/OG0003138,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#Agent
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#lastModificationDate,2010-01-26
+N0109853c3cd04956ac325cf20db2a372,https://www.ica.org/standards/RiC/ontology#name,수정
+https://authority.archives.go.kr/agentName/OG0003138-chineseCharacter,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#AgentName
+N0109853c3cd04956ac325cf20db2a372,https://www.ica.org/standards/RiC/ontology#descriptiveNote,김현채(2010년 1월 26일) : 기관연혁수정
+https://authority.archives.go.kr/instantiation/OG0003138,https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy,https://authority.archives.go.kr/rule/ric-o
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName,https://authority.archives.go.kr/agentName/OG0003138-korean
+https://authority.archives.go.kr/agentName/OG0003138-korean,https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy,https://authority.archives.go.kr/rule/ric-o
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName,https://authority.archives.go.kr/agentName/OG0003138-chineseCharacter
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#hasOrHadLegalStatus,https://authority.archives.go.kr/thesaurus/central_administrative_gency
+https://authority.archives.go.kr/instantiation/OG0003138,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#Instantiation
+https://authority.archives.go.kr/agent/OG0003138,http://www.w3.org/2002/07/owl#sameAs,https://description.archives.go.kr/national_archives_korea
+https://authority.archives.go.kr/instantiation/OG0003138,https://www.ica.org/standards/RiC/ontology#hasOrHadHolder,https://authority.archives.go.kr/agent/k00001
+N4cecc5da2dd14d94941a333adcd89a40,https://www.ica.org/standards/RiC/ontology#name,최초기술
+https://authority.archives.go.kr/agentName/OG0003138-chineseCharacter,https://www.ica.org/standards/RiC/ontology#textualValue,行政自治部 國家記錄院
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentTemporalRelation,https://authority.archives.go.kr/agentTemporalRelation/OG0003138-OG0028509-20080229-20130323
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentHierarchicalRelation,https://authority.archives.go.kr/agentHierarchicalRelation/OG0003138-OG0003261-20050509-20061211
+https://authority.archives.go.kr/record/OG0003138,http://www.w3.org/2000/01/rdf-schema#seeAlso,http://isni.org/isni/000000046404888X
+https://authority.archives.go.kr/agentName/OG0003138-korean,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#AgentName
+https://authority.archives.go.kr/instantiation/OG0003138,http://www.w3.org/2000/01/rdf-schema#seeAlso,https://description.archives.go.kr/national_archives_korea
+https://authority.archives.go.kr/record/OG0003138,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#Record
+https://authority.archives.go.kr/agentName/OG0003138-korean,http://www.w3.org/2000/01/rdf-schema#label,행정자치부 국가기록원
+https://authority.archives.go.kr/agentName/OG0003138-chineseCharacter,https://www.ica.org/standards/RiC/ontology#isOrWasAgentNameOf,https://authority.archives.go.kr/agent/OG0003138
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentHierarchicalRelation,https://authority.archives.go.kr/agentHierarchicalRelation/OG0003138-OG0003312-20061212-20080228
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentHierarchicalRelation,https://authority.archives.go.kr/agentHierarchicalRelation/OG0022665-OG0003138-19980228-20080229
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentTemporalRelation,https://authority.archives.go.kr/agentTemporalRelation/OG0002956-OG0003138-19980228-20040524
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#isOrWasAffectedBy,N4cecc5da2dd14d94941a333adcd89a40
+https://authority.archives.go.kr/instantiation/OG0003138,https://www.ica.org/standards/RiC/ontology#identifier,KO_NAK_OG0003138
+N0109853c3cd04956ac325cf20db2a372,https://www.ica.org/standards/RiC/ontology#date,2010-01-26
+https://authority.archives.go.kr/agent/OG0003138,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://www.ica.org/standards/RiC/ontology#CorporateBody
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#endDate,2008-02-29
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#isOrWasDescribedBy,https://authority.archives.go.kr/record/OG0003138
+https://authority.archives.go.kr/agent/OG0003138,http://www.w3.org/2000/01/rdf-schema#label,행정자치부 국가기록원
+https://authority.archives.go.kr/agent/OG0003138,https://www.ica.org/standards/RiC/ontology#beginningDate,2004-05-24
+https://authority.archives.go.kr/record/OG0003138,https://www.ica.org/standards/RiC/ontology#source,"국가기록원 홈페이지, www.archives.go.kr, 2010.01.26"

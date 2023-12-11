@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#" 
+         xmlns:isni="http://isni.org/ontology#" 
+         xmlns:owl="http://www.w3.org/2002/07/owl#" 
+         xmlns:html="http://www.w3.org/1999/xhtml" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xml:base="https://authority.archives.go.kr/"> <!-- 가상의 URI -->
+
+
+  <rico:Record rdf:about="record/OG0003138">
+    <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-05</rico:creationDate>
+    <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000046404888X"/>
+
+  </rico:Record>
+
+  <rico:Agent rdf:about="agent/OG0003138">
+    <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/OG0003138-korean">
+            <rdfs:label xml:lang="ko">행정자치부 국가기록원</rdfs:label>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+
+
+  </rico:Agent>
+
+</rdf:RDF>
+

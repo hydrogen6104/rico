@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Graph using D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* 기본 텍스트 스타일을 지정합니다. */
+        text {
+            font: 10px sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const width = 3800; // SVG 너비 조정
+        const height = 4000; // SVG 높이 조정
+
+        const treeLayout = d3.tree().size([height - 200, width - 400]); // treeLayout 크기 조정
+
+        const svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(200,100)");
+
+        // Get font size based on node's depth
+        function getFontSize(d) {
+            switch (d.depth) {
+                case 0: return "60px"; // World
+                case 1: return "50px"; // Continent
+                case 2: return "40px"; // Region
+                default: return "13px"; // Country
+            }
+        }
+
+        d3.json('world-country.json').then(data => {
+            const root = d3.hierarchy(data);
+            treeLayout(root);
+
+            const links = svg.selectAll(".link")
+                .data(root.links())
+                .enter()
+                .append("path")
+                .attr("class", "link")
+                .attr("d", d3.linkHorizontal()
+                    .x(d => d.y)
+                    .y(d => d.x))
+                .attr("fill", "none")
+                .attr("stroke", "#555")
+                .attr("stroke-width", "1.5px");
+
+            const nodes = svg.selectAll(".node")
+                .data(root.descendants())
+                .enter()
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.y},${d.x})`);
+
+            nodes.append("circle")
+                .attr("r", 4);
+
+            nodes.append("text")
+                .attr("dy", 3)
+                .attr("dx", d => d.children ? -8 : 8)
+                .attr("text-anchor", d => d.children ? "end" : "start")
+                .style("font-size", d => getFontSize(d))
+                .text(d => d.data.data.id);
+        });
+
+    </script>
+</body>
+
+</html>

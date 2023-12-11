@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#" 
+         xmlns:isni="http://isni.org/ontology#" 
+         xmlns:owl="http://www.w3.org/2002/07/owl#" 
+         xmlns:html="http://www.w3.org/1999/xhtml" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"> <!-- 가상의 URI -->
+
+   <rico:Record rdf:about="record/005074">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+         <!-- 이 주체 레코드의 문서 유형을 나타냅니다. 이 예시에서는 "AuthorityRecord"로 지정되어 있습니다. 문서 유형은 해당 레코드의 유형을 식별하는 데 사용됩니다. -->
+      <rico:describesOrDescribed rdf:resource="agent/005074"/>
+         <!-- 이 레코드가 설명하거나 관련된 주체를 가리키는 연결입니다. 이 예시에서는 "agent/005074"로 지정되어 있습니다. -->
+      <rico:hasCreator rdf:resource="agent/005061"/>
+         <!-- 이 레코드를 생성한 주체를 나타냅니다. 이 예시에서는 "agent/005061"로 지정되어 있습니다. -->
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+         <!-- 주체 레코드에 해당하는 주체의 언어를 나타냅니다. 이 언어 정보는 주체의 관련 내용이나 메타데이터에 사용된 언어를 지정하는 데 사용됩니다. -->
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>   
+         <!-- 주체 레코드에 대해 규정이나 규칙이 적용되었거나 적용되고 있는 경우를 나타냅니다.     -->
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>      
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+         <!-- 이 레코드의 생성 날짜를 나타냅니다. 이 예시에서는 "2015-12-04"로 지정되어 있습니다. -->
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:lastModificationDate>
+         <!-- 이 레코드의 마지막 수정 날짜를 나타냅니다. 이 예시에서는 "2017-04-12"로 지정되어 있습니다. -->
+      <rico:isOrWasAffectedBy>
+         <!-- 이 주체 레코드에 영향을 미친 활동(Activity)을 나타냅니다. 각각의 활동은 이름, 날짜 및 설명 등의 정보를 가질 수 있습니다. -->
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+               <!-- 이 요소는 활동의 이름을 나타냅니다. 예시에서는 활동의 이름이 "Dérivation (Import_SIA)"로 지정되어 있습니다. 이것은 활동의 종류나 내용을 나타냅니다.  -->
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+               <!-- 이 요소는 활동이 발생한 날짜를 나타냅니다. <rdf:datatype> 속성을 통해 날짜 데이터의 형식을 나타내며, 여기서는 http://www.w3.org/2001/XMLSchema#date로 날짜 형식을 지정하고 있습니다. -->
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-01</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 12 avril 2017 : revu liens IR, liens NP, ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+
+      <rico:source xml:lang="fr">Dictionnaire de la BnF (état au 28 août 2015)</rico:source>
+         <!-- 이 주체 레코드에 대한 참조나 출처 정보를 나타냅니다. 다양한 출처 정보를 포함할 수 있습니다. -->
+      <rico:source xml:lang="fr">Site officiel de la BnF (http://www.bnf.fr/fr/la_bnf/connaitre_bnf.html)</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France)</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF11862469</rico:source>
+      
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012353066X"/>
+         <!-- <rdfs:seeAlso> 태그는 현재 주체 레코드와 관련된 다른 리소스를 나타냅니다. 각각의 <rdf:resource>는 해당 관련 리소스의 식별자를 나타냅니다. 이것은 보다 자세한 정보나 추가적인 참조 정보를 제공하고자 할 때 사용됩니다. -->
+
+      <rico:hasInstantiation>
+         <!-- 이 레코드에 대한 구체적인 구현(Instantiation) 정보를 나타냅니다. 각각의 구현은 형식, 식별자, 생성자 등의 정보를 가질 수 있습니다. -->
+         <rico:Instantiation rdf:about="instantiation/005074">
+            <!-- 이 부분은 특정 인스턴스(데이터의 실체화 또는 구현)에 대한 정보를 담고 있습니다. 이 인스턴스는 특정 레코드의 구현임 -->
+            <!-- 특정 인스턴스를 나타내는 데 사용되며, 그 내부에 해당 인스턴스에 대한 다양한 정보가 포함되어 있습니다. -->
+            <!-- rdf:about 속성: 이 속성은 해당 인스턴스의 식별자(URI)를 나타냅니다. 여기서는 "instantiation/005074"로 지정되어 있습니다. -->
+            <rico:isInstantiationOf rdf:resource="record/005074"/>
+               <!-- 이 요소는 해당 인스턴스가 어떤 레코드의 실체화인지를 나타냅니다. <rdf:resource> 속성을 통해 관련 레코드의 URI를 참조하고 있습니다. -->
+            <dc:format xml:lang="en">text/xml</dc:format>
+               <!-- 이 요소는 해당 인스턴스의 데이터 형식을 나타냅니다. 여기서는 "text/xml"로 지정되어 있습니다. xml:lang 속성은 언어를 지정합니다. -->
+            <rico:identifier>FRAN_NP_005074</rico:identifier>
+               <!-- 이 요소는 해당 인스턴스의 식별자를 나타냅니다. 예시에서 "FRAN_NP_005074"로 지정되어 있습니다. -->
+               <!-- 내부적인 데이터 관리를 위한 식별자임 -->
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+               <!-- 이 요소는 해당 인스턴스의 소유자를 나타냅니다. <rdf:resource> 속성을 통해 관련 소유자의 URI를 참조하고 있습니다. -->
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005074"/>
+               <!-- 이 요소는 해당 인스턴스와 관련된 추가 정보를 참조하는 URI를 제공합니다. -->
+            <rico:identifier>5103/79BNF</rico:identifier>
+               <!-- "5103/79BNF"는 어떤 외부 시스템이나 규칙(rule)에 따라 이 인스턴스를 식별하는 데 사용되는 값입니다. -->
+               <!-- 외부 시스템이나 규칙에서 사용하는 식별자입니다. -->
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+               <!-- 이 요소는 해당 인스턴스가 어떤 규칙(rule)에 의해 규제되었거나 규제되고 있는지를 나타냅니다. <rdf:resource> 속성을 통해 관련 규칙의 URI를 참조하고 있습니다. -->
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+
+   </rico:Record>
+
+   <rico:Agent rdf:about="agent/005074">
+
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+         <!-- 이 요소가 Corporate Body 유형의 에이전트임을 나타냅니다. -->
+      <rico:isOrWasDescribedBy rdf:resource="record/005074"/>
+         <!-- 이 에이전트에 대한 기록이나 데이터가 있는 레코드를 나타냅니다. -->
+      <isni:identifierValid>000000012353066X</isni:identifierValid>
+         <!-- 이 에이전트의 유효한 ISNI(국제 표준 이름 식별자) 값을 나타냅니다. -->
+      <rdfs:label xml:lang="fr">Bibliothèque nationale (France)</rdfs:label>
+         <!-- 이 에이전트의 라벨 또는 이름을 나타냅니다. -->
+      <rico:hasOrHadAgentName>
+         <!-- 이 태그 내부에는 에이전트의 다양한 이름에 대한 정보가 나타납니다. -->
+         <rico:AgentName rdf:about="agentName/005074-Biblioth%C3%A8que%20nationale%20%28France%29">
+            <!-- 이 태그는 특정 이름에 대한 정보를 제공합니다. rdf:about 속성으로 고유한 식별자를 제공합니다. -->
+            <rdfs:label xml:lang="fr">Bibliothèque nationale (France)</rdfs:label>
+               <!-- rdfs:label로 이름의 내용을 나타냅니다. -->
+            <rico:textualValue xml:lang="fr">Bibliothèque nationale (France)</rico:textualValue>
+               <!-- 요소 내부의 텍스트 값은 해당 언어로 된 실제 내용을 나타냅니다.  -->
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005074"/>
+               <!-- 이 이름이 특정 에이전트에 대한 이름이었거나 현재도 그 에이전트의 이름인지를 나타냅니다. rdf:resource 속성은 관련된 에이전트의 식별자를 나타냅니다. -->
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+               <!-- 이 에이전트가 특정 규칙이나 규정에 의해 조절되었거나 조절되고 있는지를 나타냅니다. rdf:resource 속성은 관련된 규칙의 식별자를 나타냅니다. -->
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+               <!-- rico:type은 에이전트 이름의 유형을 나타냅니다. -->
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005074-BN">
+            <rdfs:label xml:lang="fr">BN</rdfs:label>
+            <rico:textualValue xml:lang="fr">BN</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005074"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1792-01-04</rico:beginningDate>
+         <!-- 에이전트의 시작 날짜를 나타냅니다. -->
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-12-31</rico:endDate>
+         <!-- 에이전트의 종료 날짜를 나타냅니다. -->
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+         <!-- 에이전트의 법적 지위에 대한 정보를 제공합니다. -->
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <!-- <rico:descriptiveNote> 태그 내부에는 에이전트에 대한 설명이 포함됩니다. -->
+         <!-- 이는 일련의 HTML 태그를 사용하여 구성되며, 에이전트의 역사와 조직 구조에 대한 정보를 담고 있습니다. -->
+         <html:div xml:lang="fr">
+            <!-- 이는 구획을 나타내며, 프랑스어로 된 내용을 포함합니다. xml:lang 속성은 언어를 지정합니다. -->
+            <!-- 이 HTML 구조는 프랑스 국립도서관 (Bibliothèque nationale de France)의 내부 조직 및 발전 과정에 대한 설명을 포함하고 있습니다. 예를 들어, 국립도서관이 설립된 연도, 조직 변화, 부서들의 역할과 등장 과정, 각 부서의 업무 등에 관한 내용이 포함되어 있습니다.  -->
+            <h4>Organisation interne ou généalogie</h4>
+               <!-- 이 부분은 제목을 나타내며, "내부 조직 또는 가계도"를 의미합니다. -->
+            <html:p>Créée en 1792, la Bibliothèque nationale a connu nombre d’évolutions. Le 22 février 1839 est promulguée une ordonnance qui la réorganise et crée le poste d’administrateur général. Les quatre directeurs de départements assuraient jusqu’alors la direction à tour de rôle.</html:p>
+               <!-- 이는 문단을 나타내며, 각 문단은 한 개 이상의 문장을 포함할 수 있습니다. -->
+            <html:p>Le décret du 17 juin 1885 précise l’organisation de la Bibliothèque nationale qui est placée sous l’autorité d’un administrateur général dirigeant l’ensemble des services. La Bibliothèque comprend alors 4 départements :</html:p>
+            <html:ul>
+               <!-- <html:ul>은 순서 없는 목록을, <html:li>는 목록 항목을 나타냅니다. -->
+               <html:li>Estampes ;</html:li>
+               <html:li>Livres imprimés, cartes et collections géographiques ;</html:li>
+               <html:li>Manuscrits, chartes et diplômes ;</html:li>
+               <html:li>Médailles, pierres gravées et antiques.</html:li>
+            </html:ul>
+            <html:p>La loi du 7 mars 1942 institue un régime nouveau et une réforme de la Bibliothèque, d’une part avec la suppression de l’autonomie financière de la Réunion des bibliothèques nationales, d’autre part avec un premier éclatement du grand département des Livres imprimés et la création de trois départements :</html:p>
+            <html:ul>
+               <html:li>Cartes et plans (qui récupère les atlas venant des Imprimés) ;</html:li>
+               <html:li>Musique (regroupant les bibliothèques de l’Opéra et du Conservatoire) ;</html:li>
+               <html:li>Entrées (qui regroupe le dépôt légal et les autres modes d’acquisition ainsi que les services de catalogage).</html:li>
+            </html:ul>
+            <html:p>En 1945, c’est le département des périodiques qui est créé.</html:p>
+            <html:p>En 1976 viennent s'ajouter le département de la phonothèque et de l’audiovisuel, ainsi que le département des arts du spectacle.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      
+      <rico:history rdf:parseType="Literal">
+         <!-- 이 태그는 특정한 기록물이나 정보의 변천사, 발전 경로, 변화된 컨텍스트 등을 기술하는 데 사용됩니다. -->
+         <!-- rdf:parseType 속성을 사용하여 리터럴 값을 나타냅니다. 이 태그는 해당 부분에 포함된 내용이 RDF 데이터의 일부로 간주되는 것이 아니라, 일반적인 텍스트 리터럴로 처리되어야 함을 나타냅니다. -->
+         <!-- rdf:parseType="Literal" 속성은 내용을 RDF 문서의 텍스트로 취급하라는 지시입니다. 즉, 이 태그 내부에 있는 내용은 RDF 그래프의 일부가 아니라 일반적인 텍스트 데이터로 간주되어야 합니다.  -->
+         <html:div xml:lang="fr">
+            <!-- 이 HTML 구조는 프랑스 국립도서관 (Bibliothèque nationale de France)의 역사와 미션에 대한 설명을 포함하고 있습니다. 예를 들어, 프랑스 혁명 이후 도서관의 변화, 주요 법률 및 결정, 다양한 역할 및 임무에 관한 내용이 포함되어 있습니다.  -->
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>La Révolution française marque profondément la bibliothèque du roi. En juillet 1790, l’obligation de dépôt légal est supprimée. La loi du 4 janvier 1792 donne à la bibliothèque son nom de Bibliothèque nationale. Elle hérite des fonds de la Bibliothèque royale, enrichis grâce aux collectes des biens issus des confiscations révolutionnaires en France et à l’étranger, constituant les biens nationaux : biens ecclésiastiques, princiers, des émigrés ayant fui la France, provenant des pays conquis etc. Ainsi, 250 000 livres, 14 000 manuscrits, 85 000 estampes rejoignent les collections existantes.</html:p>
+            <html:p>Une loi du 19 juillet 1793 rétablit le dépôt légal, afin de protéger le droit d’auteur. Le dépôt légal redevient obligatoire à partir de 1810.</html:p>
+            <html:p>À la création du ministère de l’Instruction publique en 1828, la Bibliothèque est placée sous sa tutelle, puis sous celle du ministère de l’Éducation nationale lorsqu’il voit le jour en 1932.</html:p>
+            <html:p/>
+            <html:p>La première moitié du XIXe siècle se révèle être une période difficile de transition : la progression soudaine des entrées due aux confiscations révolutionnaires, le développement de l’édition et le nombre d’ouvrages déposés rendent aigu le manque de place dont souffre l’institution. En 1858, une commission conduite par Prosper Mérimée rédige un rapport sur les modifications à introduire dans l'organisation de la Bibliothèque. Ses conclusions sont en partie reprises par Napoléon III qui confie à l'architecte Henri Labrouste la reconstruction sur place d'une partie des bâtiments. Son nom reste attaché à la construction de la salle de lecture des livres imprimés, inaugurée en 1868.</html:p>
+            <html:p/>
+            <html:p>La loi du 19 mai 1925 impose que soit déposée toute « œuvre » en deux exemplaires, l’un par l’imprimeur ou le producteur et l’autre par l’éditeur. Elle prévoit également une extension du dépôt légal aux documents photographiques, cinématographiques et aux phonogrammes.</html:p>
+            <html:p/>
+            <html:p>Le statut de la Bibliothèque nationale est clairement précisé par une loi de finances du 29 avril 1926, au sein de l’article 151 lui conférant la personnalité civile et une autonomie financière.</html:p>
+            <html:p/>
+            <html:p>Le décret du 28 décembre 1926 institue la Réunion des bibliothèques nationales de Paris qui comprend la Bibliothèque nationale, la bibliothèque de l’Arsenal, la bibliothèque Mazarine, la bibliothèque Sainte-Geneviève, la bibliothèque du musée de la guerre. La Réunion des bibliothèques nationales de Paris est investie de la personnalité civile. Elle est créée afin de concentrer les dépenses de matériel et de faciliter la mobilité du personnel.</html:p>
+            <html:p/>
+            <html:p>Le champ d’action de la Bibliothèque nationale, qui s’est élargi grâce au rattachement de bibliothèques extérieures, s’étend aussi au XXe siècle de manière géographique, à travers le rachat d’espaces permettant à l’établissement de s’installer sur la totalité du quadrilatère Richelieu, la construction d’étages supplémentaires de magasins, ou la construction d’annexes. Ainsi, quatre nouvelles salles (salles des catalogues, des bibliographies et la salle Ovale) sont ouvertes entre 1935 et 1958 au sein du quadrilatère Richelieu. Trois annexes à Versailles sont construites en 1934, 1954 et 1971, et deux centres techniques de conservation, André-François Poncet à Provins et Jöel le Theule à Sablé-sur-Sarthe.</html:p>
+            <html:p/>
+            <html:p>En 1975, lors de l’éclatement de la direction des bibliothèques de France entre deux tutelles administratives (ministères de l’Education nationale et de la Culture), la Bibliothèque nationale se trouve directement rattachée au ministère des Universités. Le décret n° 77-1274 du 19 novembre 1977 relatif à l’organisation et au régime financier de la Bibliothèque nationale dispose qu’elle est un établissement national à caractère administratif, doté de la personnalité civile et de l’autonomie financière. Ce nouveau statut en décrit les missions fondamentales, lui confie la gestion de centres techniques de coopération entre bibliothèques et lui donne un nouveau conseil d’administration. Il insiste sur la vocation de la Bibliothèque nationale à conduire des recherches dans le domaine des sciences humaines et sociales : dotée d’un conseil scientifique, la BN reçoit le statut d’établissement de recherche.</html:p>
+            <html:p/>
+            <html:p>Par le décret n° 81-646 du 5 juin 1981 relatif aux attributions du ministre de la Culture (publié au Journal Officiel le 6 juin), la BN est placée sous l’autorité de ce dernier. Le directeur du Livre, Jean Gattégno milite alors pour la rénovation et une transformation radicale de la Bibliothèque nationale. Le 2 janvier 1987, le ministre de la Culture et de la Communication, François Léotard, commande un rapport à Francis Beck, ancien directeur de l’administration générale du ministère, remis en juin 1987 (<html:i>Mission d’étude et propositions sur la Bibliothèque nationale</html:i>).</html:p>
+            <html:p>L’année 1988 est celle d’une profonde mutation. À la fin du mandat de François Léotard comme ministre de la Culture et de la Communication (1986-1988) est présenté dans le premier gouvernement de cohabitation, en avril 1988, le projet «BN Bis». L’élection présidentielle marque un changement de cap. Le 14 juillet 1988, lors de son traditionnel entretien télévisé dans le parc de l'Elysée, le Président de la République, François Mitterrand, annonce « la construction et l'aménagement de l'une ou de la plus grande et la plus moderne bibliothèque du monde [...] [qui] devra couvrir tous les champs de la connaissance, être à la disposition de tous, utiliser les technologies les plus modernes de transmission de données, pouvoir être consultée à distance et entrer en relation avec d'autres bibliothèques européennes ». Le 30 novembre 1988, Patrice Cahart et Michel Melot présentent au Premier ministre un rapport intitulé « Propositions pour une grande bibliothèque » qui préconise une bibliothèque très largement ouverte, qui accueillerait les imprimés à partir de 1945. Le décret n°89-777 du 13 octobre 1989 crée l’établissement public de la Bibliothèque de France, chargé de la construction d’une nouvelle bibliothèque. Dès 1990, les grands chantiers préparatoires au déménagement des collections sont lancés, passant notamment par des récolements, inventaires et informatisation générale des catalogues. Le décret n° 94-3 du 3 janvier 1994 entérine la fusion de la BN et de l’établissement public de la Bibliothèque de France par la création de la Bibliothèque nationale de France (BnF), établissement public à caractère administratif.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>D’après l’article 3 du décret n° 77-1274 du 19 novembre 1977 :</html:p>
+            <html:p>« La Bibliothèque nationale est le centre national chargé de collecter, de cataloguer, de conserver en permanence et d’exploiter les documents soumis au dépôt légal.</html:p>
+            <html:p>Elle rassemble des collections de manuscrits, de monnaies et médailles, de documents rares et précieux qui présentent un intérêt national et dont elle dresse le catalogue.</html:p>
+            <html:p>Elle réunit tous documents spécialisés liés au développement et à l’exploitation de ses collections.</html:p>
+            <html:p>Elle constitue des collections étrangères d’imprimés, de manuscrits, de monnaies et médailles, d’estampes, de photographies, de cartes et plans, de musique, d’œuvres sonores et audiovisuelles ; elle en tient le catalogue.</html:p>
+            <html:p>Elle conserve les publications officielles étrangères acquises en application des accords d’échanges internationaux de publications officielles.</html:p>
+            <html:p>La Bibliothèque nationale est chargée de la gestion des centres technique de coopération entre bibliothèques définis par arrêté du ministre chargé des universités.</html:p>
+            <html:p>La Bibliothèque nationale conduit des recherches dans le domaine des sciences humaines et sociales. Un conseil scientifique de la Bibliothèque nationale donne son avis sur les orientations et les thèmes de ces recherches. »</html:p>
+         </html:div>
+      </rico:history>
+      
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/003944-005074-19760101-19810513"/>
+         <!-- 이 태그는 특정한 요소(agent)가 다른 요소와 계층적인 관계를 가지고 있는 것을 나타내는 관계입니다. 예를 들어, 어떤 요소가 다른 요소의 하위 요소인 경우를 나타냅니다. -->
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-005074-18280210-19751231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003531-005074-19450818-19751231"/>
+         <!-- 이 태그는 요소 간의 연결 관계를 나타내는 관계입니다. 어떤 요소와 다른 요소가 어떤 형태로 연결되어 있는지를 나타냅니다. -->
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005074-19810606-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005090-18220601-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005076-19810606-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005429-19860120-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005089-19850101-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005090-18220601-19940102"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005055-005074-19900105-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005673-19930322-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-009943-19450818-19751231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005099-19810606-19931231"/>
+      
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11862469g#about"/>
+         <!-- 이 태그는 두 개의 리소스가 서로 동일한 것을 나타내는 관계입니다. 즉, 두 개의 리소스가 동일한 정보를 나타내고 있음을 나타냅니다. -->
+      
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005074-051355-19940101-*"/>
+         <!-- 이 태그는 특정한 요소가 다른 요소와 시간적인 관계를 가지고 있는 것을 나타내는 관계입니다. 예를 들어, 어떤 요소가 다른 요소의 출처가 되는 시간적 관계를 나타냅니다. -->
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-051483-18540101-18681231"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009556-005074"/>
+         <!-- 이 태그는 특정한 요소가 다른 요소의 기원과 관련된 관계를 가지고 있는 것을 나타내는 관계입니다. 즉, 어떤 요소가 다른 요소의 기원이 되는 관계를 나타냅니다. -->
+      <rico:isProvenanceOf rdf:resource="recordResource/009556-top"/>
+         <!-- 이 태그는 특정한 요소가 다른 요소의 기원을 나타내는 관계를 가지고 있는 것을 나타내는 관계입니다. 즉, 어떤 요소가 다른 요소의 기원을 나타내는 역할을 한다는 것을 나타냅니다. -->
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009555-005074"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/009555-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009557-005074"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/009557-top"/>
+   </rico:Agent>
+</rdf:RDF>

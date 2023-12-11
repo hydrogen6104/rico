@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDF Network Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .node {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // 네트워크 그래프를 그릴 SVG 요소를 생성합니다.
+        const width = 960;
+        const height = 600;
+        const svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // 그래프 데이터를 불러옵니다.
+        d3.json("graph_data.json").then(data => {
+            const links = data.links.map(d => Object.create(d));
+            const nodes = data.nodes.map(d => Object.create(d));
+
+            // 시뮬레이션 초기화
+            const simulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(links).id(d => d.id))
+                .force("charge", d3.forceManyBody())
+                .force("center", d3.forceCenter(width / 2, height / 2));
+
+            // 링크 생성
+            const link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(links)
+                .enter().append("line")
+                .attr("class", "link")
+                .attr("stroke-width", d => Math.sqrt(d.value));
+
+            // 노드 생성
+            const node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(nodes)
+                .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", 5)
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            // 시뮬레이션을 통한 노드와 링크의 위치 업데이트
+            simulation.on("tick", () => {
+                link.attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node.attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+            });
+
+            function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+        });
+    </script>
+</body>
+
+</html>

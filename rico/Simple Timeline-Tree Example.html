@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Timeline-Tree Graph</title>
+
+    <style>
+        .node circle {
+            fill: steelblue;
+            stroke: grey;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: slategray;
+            shape-rendering: crispEdges;
+        }
+
+        .x.axis line,
+        .x.axis path {
+            fill: none;
+            stroke: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <script>
+        var treeData = [{
+            "name": "중앙행정기관",
+            "date": "28-02-1998",
+            "children": [
+                {
+                    "name": "행정자치부(OG0022665)",
+                    "date": "28-02-1998",
+                    "children": [
+                        {
+                            "name": "행정자치부 정부기록보존소(OG0002956)",
+                            "date": "28-02-1998"
+                        },
+                        {
+                            "name": "행정자치부 국가기록원(OG0003138)",
+                            "date": "24-05-2004"
+                        }
+                    ]
+                },
+                {
+                    "name": "행정안전부(OG0022667)",
+                    "date": "29-02-2008",
+                    "children": [
+                        {
+                            "name": "행정안전부 국가기록원(OG0028509)",
+                            "date": "29-02-2008"
+                        }
+                    ]
+                }
+            ]
+        }];
+
+        var margin = {
+                top: 20,
+                right: 60,
+                bottom: 20,
+                left: 120
+            },
+            width = 1000 - margin.right - margin.left,
+            height = 500 - margin.top - margin.bottom;
+
+        var i = 0;
+
+        var tree = d3.layout.tree()
+            .size([height, width]);
+
+        var diagonal = d3.svg.diagonal()
+            .projection(function (d) {
+                return [d.y, d.x];
+            });
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.right + margin.left)
+            .attr("height", height + margin.top + margin.bottom),
+            g = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        root = treeData[0];
+        var nodes = tree.nodes(root).reverse();
+        var maxdate = d3.max(nodes, function (d) {
+            return new Date(d.date.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+        });
+        var mindate = d3.min(nodes, function (d) {
+            return new Date(d.date.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+        });
+
+        var x = d3.time.scale()
+            .domain([mindate, maxdate])
+            .range([0, width]);
+
+        var xAxis = d3.svg.axis()
+            .orient("bottom")
+            .scale(x)
+            .ticks(10);
+        g.append('g')
+            .attr('transform', 'translate(0,' + height + ')')
+            .attr("class", "axis")
+            .call(xAxis);
+
+        var linksg = g.append("g");
+
+        update(root);
+
+        function update(source) {
+            var nodes = tree.nodes(root).reverse(),
+                links = tree.links(nodes);
+
+            nodes.forEach(function (d) {
+                d.y = d.depth * 200;
+            });
+
+            var node = g.selectAll("g.node")
+                .data(nodes, function (d) {
+                    return d.id || (d.id = ++i);
+                });
+
+            var nodeEnter = node.enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) {
+                    var ddate = d.date.split("-");
+                    var t = new Date(ddate[2], ddate[1], ddate[0]);
+                    return "translate(" + x(t) + "," + d.x + ")";
+                });
+
+            nodeEnter.append("circle")
+                .attr("r", 10)
+                .style("fill", "steelblue");
+
+            nodeEnter.append("text")
+                .attr("x", function (d) {
+                    return d.children || d._children ? -15 : 15;
+                })
+                .attr("dy", ".35em")
+                .attr("text-anchor", function (d) {
+                    return d.children || d._children ? "end" : "start";
+                })
+                .text(function (d) {
+                    return d.name;
+                })
+                .style("fill-opacity", 1);
+
+            var link = linksg.selectAll('.link')
+                .data(links)
+                .enter().append('path')
+                .attr('class', 'link')
+                .attr('d', function (d) {
+                    var res = d.target.date.split("-");
+                    var targetDate = new Date(+res[2], +res[1], +res[0]);
+                    res = d.source.date.split("-");
+                    var sourceDate = new Date(+res[2], +res[1], +res[0]);
+                    return 'M' + x(targetDate) + ',' + d.target.x +
+                        'C' + (x(targetDate) + x(sourceDate)) / 2 + ',' + d.target.x +
+                        ' ' + (x(targetDate) + x(sourceDate)) / 2 + ',' + d.source.x +
+                        ' ' + x(sourceDate) + ',' + d.source.x;
+                });
+        }
+
+    </script>
+</body>
+
+</html>

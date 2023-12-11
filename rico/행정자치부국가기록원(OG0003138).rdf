@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#" 
+         xmlns:isni="http://isni.org/ontology#" 
+         xmlns:owl="http://www.w3.org/2002/07/owl#" 
+         xmlns:html="http://www.w3.org/1999/xhtml" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xml:base="https://authority.archives.go.kr/"> <!-- 가상의 URI -->
+
+   <rico:Record rdf:about="record/OG0003138">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+         <!-- 이 주체 레코드의 문서 유형을 나타냅니다. 이 예시에서는 "AuthorityRecord"로 지정되어 있습니다. 문서 유형은 해당 레코드의 유형을 식별하는 데 사용됩니다. -->
+      <rico:describesOrDescribed rdf:resource="agent/OG0003138"/>
+         <!-- 이 레코드가 설명하거나 관련된 주체를 가리키는 연결입니다. 이 예시에서는 "agent/OG0003138"로 지정되어 있습니다. -->
+      <rico:hasCreator rdf:resource="agent/k00001"/>
+         <!-- 이 레코드를 생성한 주체를 나타냅니다. 이 예시에서는 "agent/k00001"로 지정되어 있습니다. -->
+      <rico:hasOrHadLanguage rdf:resource="language/korean"/>
+         <!-- 주체 레코드에 해당하는 주체의 언어를 나타냅니다. 이 언어 정보는 주체의 관련 내용이나 메타데이터에 사용된 언어를 지정하는 데 사용됩니다. -->
+      <rico:isOrWasRegulatedBy rdf:resource="rule/ric-o"/>   
+         <!-- 주체 레코드에 대해 규정이나 규칙이 적용되었거나 적용되고 있는 경우를 나타냅니다.     -->
+      
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-05</rico:creationDate>
+         <!-- 이 레코드의 생성 날짜를 나타냅니다. 이 예시에서는 "2009-03-05"로 지정되어 있습니다. -->
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</rico:lastModificationDate>
+         <!-- 이 레코드의 마지막 수정 날짜를 나타냅니다. 이 예시에서는 "2010-01-26"로 지정되어 있습니다. -->
+      <rico:isOrWasAffectedBy>
+         <!-- 이 주체 레코드에 영향을 미친 활동(Activity)을 나타냅니다. 각각의 활동은 이름, 날짜 및 설명 등의 정보를 가질 수 있습니다. -->
+         <rico:Activity>
+            <rico:name xml:lang="ko">최초기술</rico:name>
+               <!-- 이 요소는 활동의 이름을 나타냅니다. 예시에서는 활동의 이름이 "Dérivation (Import_SIA)"로 지정되어 있습니다. 이것은 활동의 종류나 내용을 나타냅니다.  -->
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-05</rico:date>
+               <!-- 이 요소는 활동이 발생한 날짜를 나타냅니다. <rdf:datatype> 속성을 통해 날짜 데이터의 형식을 나타내며, 여기서는 http://www.w3.org/2001/XMLSchema#date로 날짜 형식을 지정하고 있습니다. -->
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="ko">수정</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</rico:date>
+            <rico:descriptiveNote xml:lang="ko">김현채(2010년 1월 26일) : 기관연혁수정</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+
+      <rico:source xml:lang="ko">행정안전부와 그 소속기관 직제 [시행 2009.3.1.] [대통령령 제21339호, 2009.2.27., 일부개정]</rico:source>
+         <!-- 이 주체 레코드에 대한 참조나 출처 정보를 나타냅니다. 다양한 출처 정보를 포함할 수 있습니다. -->
+      <rico:source xml:lang="ko">국가기록원 홈페이지, www.archives.go.kr, 2010.01.26</rico:source>
+      
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000046404888X"/>
+         <!-- <rdfs:seeAlso> 태그는 현재 주체 레코드와 관련된 다른 리소스를 나타냅니다. 각각의 <rdf:resource>는 해당 관련 리소스의 식별자를 나타냅니다. 이것은 보다 자세한 정보나 추가적인 참조 정보를 제공하고자 할 때 사용됩니다. -->
+
+      <rico:hasInstantiation>
+         <!-- 이 레코드에 대한 구체적인 구현(Instantiation) 정보를 나타냅니다. 각각의 구현은 형식, 식별자, 생성자 등의 정보를 가질 수 있습니다. -->
+         <rico:Instantiation rdf:about="instantiation/OG0003138">
+            <!-- 이 부분은 특정 인스턴스(데이터의 실체화 또는 구현)에 대한 정보를 담고 있습니다. 이 인스턴스는 특정 레코드의 구현임 -->
+            <!-- 특정 인스턴스를 나타내는 데 사용되며, 그 내부에 해당 인스턴스에 대한 다양한 정보가 포함되어 있습니다. -->
+            <!-- rdf:about 속성: 이 속성은 해당 인스턴스의 식별자(URI)를 나타냅니다. 여기서는 "instantiation/005074"로 지정되어 있습니다. -->
+            <rico:isInstantiationOf rdf:resource="record/OG0003138"/>
+               <!-- 이 요소는 해당 인스턴스가 어떤 레코드의 실체화인지를 나타냅니다. <rdf:resource> 속성을 통해 관련 레코드의 URI를 참조하고 있습니다. -->
+            <dc:format xml:lang="en">text/xml</dc:format>
+               <!-- 이 요소는 해당 인스턴스의 데이터 형식을 나타냅니다. 여기서는 "text/xml"로 지정되어 있습니다. xml:lang 속성은 언어를 지정합니다. -->
+            <rico:identifier>KO_NAK_OG0003138</rico:identifier>
+               <!-- 이 요소는 해당 인스턴스의 식별자를 나타냅니다. 예시에서 "KO_NAK_OG0003138"로 지정되어 있습니다. -->
+               <!-- 내부적인 데이터 관리를 위한 식별자임 -->
+            <rico:hasOrHadHolder rdf:resource="agent/k00001"/>
+               <!-- 이 요소는 해당 인스턴스의 소유자를 나타냅니다. <rdf:resource> 속성을 통해 관련 소유자의 URI를 참조하고 있습니다. -->
+            <rdfs:seeAlso rdf:resource="https://description.archives.go.kr/national_archives_korea"/>
+               <!-- 이 요소는 해당 인스턴스와 관련된 추가 정보를 참조하는 URI를 제공합니다. -->
+            <rico:identifier>1310377</rico:identifier>
+               <!-- "1310377"는 어떤 외부 시스템이나 규칙(rule)에 따라 이 인스턴스를 식별하는 데 사용되는 값입니다. -->
+               <!-- 외부 시스템이나 규칙에서 사용하는 식별자입니다. -->
+            <rico:isOrWasRegulatedBy rdf:resource="rule/ric-o"/>
+               <!-- 이 요소는 해당 인스턴스가 어떤 규칙(rule)에 의해 규제되었거나 규제되고 있는지를 나타냅니다. <rdf:resource> 속성을 통해 관련 규칙의 URI를 참조하고 있습니다. -->
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+
+   </rico:Record>
+
+   <rico:Agent rdf:about="agent/OG0003138">
+
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+         <!-- 이 요소가 Corporate Body 유형의 에이전트임을 나타냅니다. -->
+      <rico:isOrWasDescribedBy rdf:resource="record/OG0003138"/>
+         <!-- 이 에이전트에 대한 기록이나 데이터가 있는 레코드를 나타냅니다. -->
+      <isni:identifierValid>000000046404888X</isni:identifierValid>
+         <!-- 이 에이전트의 유효한 ISNI(국제 표준 이름 식별자) 값을 나타냅니다. -->
+      <rdfs:label xml:lang="ko">행정자치부 국가기록원</rdfs:label>
+         <!-- 이 에이전트의 라벨 또는 이름을 나타냅니다. -->
+      <rico:hasOrHadAgentName>
+         <!-- 이 태그 내부에는 에이전트의 다양한 이름에 대한 정보가 나타납니다. -->
+         <rico:AgentName rdf:about="agentName/OG0003138-korean">
+            <!-- 이 태그는 특정 이름에 대한 정보를 제공합니다. rdf:about 속성으로 고유한 식별자를 제공합니다. -->
+            <rdfs:label xml:lang="ko">행정자치부 국가기록원</rdfs:label>
+               <!-- rdfs:label로 이름의 내용을 나타냅니다. -->
+            <rico:textualValue xml:lang="ko">행정자치부 국가기록원</rico:textualValue>
+               <!-- 요소 내부의 텍스트 값은 해당 언어로 된 실제 내용을 나타냅니다.  -->
+            <rico:isOrWasAgentNameOf rdf:resource="agent/OG0003138"/>
+               <!-- 이 이름이 특정 에이전트에 대한 이름이었거나 현재도 그 에이전트의 이름인지를 나타냅니다. rdf:resource 속성은 관련된 에이전트의 식별자를 나타냅니다. -->
+            <rico:isOrWasRegulatedBy rdf:resource="rule/ric-o"/>
+               <!-- 이 에이전트가 특정 규칙이나 규정에 의해 조절되었거나 조절되고 있는지를 나타냅니다. rdf:resource 속성은 관련된 규칙의 식별자를 나타냅니다. -->
+            <rico:type xml:lang="ko">기관 대표명</rico:type>
+               <!-- rico:type은 에이전트 이름의 유형을 나타냅니다. -->
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/OG0003138-chineseCharacter">
+            <rdfs:label xml:lang="ko">行政自治部 國家記錄院</rdfs:label>
+            <rico:textualValue xml:lang="ko">行政自治部 國家記錄院</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/OG0003138"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-05-24</rico:beginningDate>
+         <!-- 에이전트의 시작 날짜를 나타냅니다. -->
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-02-29</rico:endDate>
+         <!-- 에이전트의 종료 날짜를 나타냅니다. -->
+      <rico:hasOrHadLegalStatus rdf:resource="https://authority.archives.go.kr/thesaurus/central_administrative_gency"/>
+         <!-- 에이전트의 법적 지위에 대한 정보를 제공합니다. -->
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <!-- <rico:descriptiveNote> 태그 내부에는 에이전트에 대한 설명이 포함됩니다. -->
+         <!-- 이는 일련의 HTML 태그를 사용하여 구성되며, 에이전트의 역사와 조직 구조에 대한 정보를 담고 있습니다. -->
+         <html:div xml:lang="ko">
+            <!-- 이는 구획을 나타내며, 한국어로 된 내용을 포함합니다. xml:lang 속성은 언어를 지정합니다. -->
+            <!-- 이 HTML 구조는 프랑스 국립도서관 (Bibliothèque nationale de France)의 내부 조직 및 발전 과정에 대한 설명을 포함하고 있습니다. 예를 들어, 국립도서관이 설립된 연도, 조직 변화, 부서들의 역할과 등장 과정, 각 부서의 업무 등에 관한 내용이 포함되어 있습니다.  -->
+            <h4>기관 변천과 내부조직</h4>
+               <!-- 이 부분은 제목-->
+            <html:p>◎ 총무처정부기록보존소 - 행정자치부정부기록보존소 - 행정자치부국가기록원 - 행정안전부국가기록원 - 안전행정부국가기록원 - 행정자치부국가기록원</html:p>
+               <!-- 이는 문단을 나타내며, 각 문단은 한 개 이상의 문장을 포함할 수 있습니다. -->
+            <html:ul>
+               <!-- <html:ul>은 순서 없는 목록을, <html:li>는 목록 항목을 나타냅니다. -->
+               <html:li>행정자치부 국가기록원 기록관리부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기록관리혁신단 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정보서비스부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정보화팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 기록정책부 ( 2006.12 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 기획지원과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 나라기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 대통령기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 대통령기록관리팀 ( 2006.12 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 보존관리과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 보존관리팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 부산기록정보센터 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 부산지원 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 부산지원 ( 2006.12 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 서비스혁신팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 서울기록정보센터 ( 2005.05 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 서울사무소 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 서울지원 ( 2007.01 ~ 2007.12 )</html:li>
+               <html:li>행정자치부 국가기록원 수집관리과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 수집관리팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 역사기록관 ( 2007.11 ~ 2008.02 )</html:li>
+               <html:li>행정자치부 국가기록원 평가분류과 ( 2004.05 ~ 2005.05 )</html:li>
+               <html:li>행정자치부 국가기록원 평가분류팀 ( 2005.05 ~ 2006.12 )</html:li>
+               <html:li>행정자치부 국가기록원 혁신지원팀 ( 2005.05 ~ 2006.12 )</html:li>
+            </html:ul>
+
+         </html:div>
+      </rico:descriptiveNote>
+      
+      <rico:history rdf:parseType="Literal">
+         <!-- 이 태그는 특정한 기록물이나 정보의 변천사, 발전 경로, 변화된 컨텍스트 등을 기술하는 데 사용됩니다. -->
+         <!-- rdf:parseType 속성을 사용하여 리터럴 값을 나타냅니다. 이 태그는 해당 부분에 포함된 내용이 RDF 데이터의 일부로 간주되는 것이 아니라, 일반적인 텍스트 리터럴로 처리되어야 함을 나타냅니다. -->
+         <!-- rdf:parseType="Literal" 속성은 내용을 RDF 문서의 텍스트로 취급하라는 지시입니다. 즉, 이 태그 내부에 있는 내용은 RDF 그래프의 일부가 아니라 일반적인 텍스트 데이터로 간주되어야 합니다.  -->
+         <html:div xml:lang="ko">
+            <!-- 이 HTML 구조는 프랑스 국립도서관 (Bibliothèque nationale de France)의 역사와 미션에 대한 설명을 포함하고 있습니다. 예를 들어, 프랑스 혁명 이후 도서관의 변화, 주요 법률 및 결정, 다양한 역할 및 임무에 관한 내용이 포함되어 있습니다.  -->
+            <html:p>
+               <html:u>기관 연혁</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>행정자치부 국가기록원은 1962년 5월 내각사무처 총무과 문서촬영실로 시작하여 1969년 8월 23일 [정부기록보존소직제]에 의해 총무처 정부기록보존소가 되었다. 1998년 2월 28일 행정자치부 정부기록보존소를 거쳐 2004년 5월 24일[행정자치부와 그 소속기관 직제]에 따라 국가기록원으로 기관명칭을 변경하였다. 2008년 2월 29일 [행정안전부와 그 소속기관 직제]에 의거 국가기록원은 행정안전부 소속으로 변경되었다. 국가기록원은 기록물 관리에 관한 기본정책결정 및 제도의 개선, 대통령기록물과 공공기관의 보존대상 기록물 및 민간보유 중요기록물의 수집·보존 및 열람·활용, 그밖에 기록물 관리에 관한 사무를 관장한다.</html:p>
+
+         </html:div>
+      </rico:history>
+      
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/OG0022665-OG0003138-19980228-20080229"/> <!-- 상위 : 행정자치부 -->
+         <!-- 이 태그는 특정한 요소(agent)가 다른 요소와 계층적인 관계를 가지고 있는 것을 나타내는 관계입니다. 예를 들어, 어떤 요소가 다른 요소의 하위 요소인 경우를 나타냅니다. -->
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/OG0003138-OG0003312-20061212-20080228"/> <!-- 하위 : 행정자치부 국가기록원 기록관리부 -->
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/OG0003138-OG0003261-20050509-20061211"/> <!-- 하위 : 행정자치부 국가기록원 기록관리혁신단 -->
+
+      <owl:sameAs rdf:resource="https://description.archives.go.kr/national_archives_korea"/>
+         <!-- 이 태그는 두 개의 리소스가 서로 동일한 것을 나타내는 관계입니다. 즉, 두 개의 리소스가 동일한 정보를 나타내고 있음을 나타냅니다. -->
+      
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/OG0002956-OG0003138-19980228-20040524"/> <!-- 이전 : 행정자치부 정부기록보존소 -->
+         <!-- 이 태그는 특정한 요소가 다른 요소와 시간적인 관계를 가지고 있는 것을 나타내는 관계입니다. 예를 들어, 어떤 요소가 다른 요소의 출처가 되는 시간적 관계를 나타냅니다. -->
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/OG0003138-OG0028509-20080229-20130323"/> <!-- 이후 : 행정안전부 국가기록원 -->
+   </rico:Agent>
+</rdf:RDF>
